@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
+title: ssucom's
+subtitle: devtory
+description: Web development
 keywords:
-author: John Doe
-language:
-timezone:
+author: ssucom
+language: ko
+timezone: Asia/Seoul
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://www.ssucoms.net
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -73,9 +73,36 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: minos
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:ssucom502/ssucom502.github.io.git
+  branch: master
+
+
+# Generate archive page
+archive_generator:
+  per_page: 0
+
+# Generate categories index page and each category page
+category_generator:
+  per_page: 10
+  enable_index_page: true
+
+# Generate tags index page and each tag page
+tag_generator:
+  per_page: 10
+  enable_index_page: true
+
+# Generator atom feed for you website
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
