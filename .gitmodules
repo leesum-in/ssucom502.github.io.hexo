@@ -1,0 +1,3 @@
+[submodule "themes/minos-ssucoms"]
+	path = themes/minos-ssucoms
+	url = https://github.com/ssucom502/hexo-theme-minos.git
